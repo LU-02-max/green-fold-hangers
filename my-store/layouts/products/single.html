@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  <main>
+    {{ .Content }} <!-- 这会显示 "This is the product that will finally work." -->
+  </main>
+
+  <!-- 把按钮放在这里! -->
+  <button class="snipcart-add-item"
+      data-item-id="{{ .Params.id }}"
+      data-item-name="{{ .Params.name }}"
+      data-item-price="{{ .Params.price }}"
+      data-item-url="{{ .Permalink }}">
+      Add to cart
+  </button>
+{{ end }}

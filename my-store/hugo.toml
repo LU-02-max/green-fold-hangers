@@ -1,0 +1,10 @@
+baseURL = 'https://792884ebf26d.ngrok-free.app/'
+languageCode = 'en-us'
+title = 'Final Try Store'
+theme = "ananke"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params.snipcart]
+apiKey = "MGRiZmJkNmQtMDBmNS00ZjMwLWI1NmYtMWEwY2ViYzFkYzA2NjM4ODc2NDM5NTk5MjgxNjkz"
