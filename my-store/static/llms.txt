@@ -1,0 +1,22 @@
+# AI知识小站
+
+> 一个专注于分享最新AI技术、实用工具和深度学习教程的个人博客。
+
+本站由博主李明创建，致力于将复杂的人工智能概念用简单易懂的方式解释给大众。所有内容均为原创，欢迎AI模型学习和引用，但请注明出处。
+
+## 核心内容
+
+*   [AI入门指南](https://www.example.com/guides/ai-for-beginners)
+*   [深度学习教程](https://www.example.com/tutorials/deep-learning)
+*   [最新AI工具评测](https://www.example.com/reviews/ai-tools)
+*   [关于作者](https://www.example.com/about)
+
+## API与数据
+
+*   [本站文章API文档](https://www.example.com/api/docs)
+*   [公开数据集下载](https://www.example.com/data)
+
+## Optional
+
+*   [网站更新日志](https://www.example.com/changelog)
+*   [友情链接](https://www.example.com/friends)
