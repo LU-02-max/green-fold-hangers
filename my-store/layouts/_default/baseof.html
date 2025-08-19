@@ -6,7 +6,7 @@
     
     <!-- 1. 引入我们自己写的主样式文件 -->
     {{ $css := resources.Get "css/main.css" }}
-    <link rel="stylesheet" href="{{ $css.Permalink }}" />
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
 
     <!-- 2. 引入 Snipcart 的官方样式 -->
     <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
