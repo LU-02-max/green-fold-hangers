@@ -3,20 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <title>{{ .Title }} | {{ .Site.Title }}</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css"
-    />
-    <!-- 在官方 CSS 下方，引入我們的自訂 CSS -->
+    
+    <!-- 1. 引入我们自己写的主样式文件 -->
+    {{ $css := resources.Get "css/main.css" }}
+    <link rel="stylesheet" href="{{ $css.Permalink }}" />
+
+    <!-- 2. 引入 Snipcart 的官方样式 -->
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
+    
+    <!-- 3. 引入我们自己写的、用来覆盖 Snipcart 的样式 -->
     <link rel="stylesheet" href="/css/custom-snipcart.css" />
   </head>
   <body>
-    <!-- 把主要内容区域变成一个可被替换的 block -->
+
+   
     {{ block "main" . }}
-    <!-- 如果子模板没有定义 "main" block，这里的内容会作为默认值显示 -->
     {{ end }}
 
-    <!-- 在 body 底部加载 Snipcart -->
-    {{ partial "snipcart.html" . }}
+    <!-- Snipcart 需要的 JS 和 div 标签，必须放在 body 的最末尾 -->
+    <script async src="https://cdn.snipcart.com/themes/v3.7.3/default/snipcart.js"></script>
+    <div hidden id="snipcart" data-api-key="MGRiZmJkNmQtMDBmNS00ZjMwLWI1NmYtMWEwY2ViYzFkYzA2NjM4ODc2NDM5NTk5MjgxNjkz"></div>
+
+
   </body>
 </html>
