@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css"
+    />
+    <!-- 在官方 CSS 下方，引入我們的自訂 CSS -->
+    <link rel="stylesheet" href="/css/custom-snipcart.css" />
   </head>
   <body>
-
     <!-- 把主要内容区域变成一个可被替换的 block -->
     {{ block "main" . }}
-      <!-- 如果子模板没有定义 "main" block，这里的内容会作为默认值显示 -->
+    <!-- 如果子模板没有定义 "main" block，这里的内容会作为默认值显示 -->
     {{ end }}
 
     <!-- 在 body 底部加载 Snipcart -->

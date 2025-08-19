@@ -1,0 +1,53 @@
+/* assets/css/main.css */
+
+/* --- 基礎重置與全域樣式 --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.6;
+    color: #333;
+    background-color: #fdfdfd;
+    margin: 0;
+    padding: 20px;
+}
+
+/* --- 容器，讓內容居中，不要貼著螢幕邊緣 --- */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- 標題樣式 --- */
+h1, h2, h3 {
+    color: #111;
+}
+
+/* --- 連結樣式 --- */
+a {
+    color: #007bff; /* 一個比較舒服的藍色 */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- 按鈕的基礎樣式 (非常重要！) --- */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff; /* 藍色背景 */
+    color: #fff; /* 白色文字 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* 滑鼠懸停時深一點的藍色 */
+    color: #fff;
+    text-decoration: none;
+}
