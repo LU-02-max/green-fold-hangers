@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-    <title>The One Product | Final Try Store</title>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    
+    <!-- 引入我们自己的主样式 -->
+    {{ $css := resources.Get "css/main.css" }}
+    <link rel="stylesheet" href="{{ $css.Permalink }}" />
+
+    <!-- 引入 Snipcart 的官方样式 -->
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
+    
+    <!-- 引入我们自己覆盖 Snipcart 的样式 -->
+    <link rel="stylesheet" href="/css/custom-snipcart.css" />
   </head>
   <body>
 
-    
-    
-  <h1>The One Product</h1>
-  <main>
-    <p>This is the product that will finally work.</p>
+    <!-- 
+      这是“主坑”，single.html 或 list.html 的内容会填充到这里。
+      注意！这个 block 之外，不应该有任何 “Add to cart” 按钮！
+    -->
+    {{ block "main" . }}
+    {{ end }}
+
+    <!-- Snipcart 需要的 JS 和 div 标签，通常放在 body 的最末尾 -->
+    <script async src="https://cdn.snipcart.com/themes/v3.7.3/default/snipcart.js"></script>
+    <div hidden id="snipcart" data-api-key="MGRiZmJkNmQtMDBmNS00ZjMwLWI1NmYtMWEwY2ViYzFkYzA2NjM4ODc2NDM5NTk5MjgxNjkz"></div>
  
-  </main>
-
-  
-  <button class="snipcart-add-item"
-      data-item-id="prod-final-001"
-      data-item-name="This Will Work Product"
-      data-item-price="1.00"
-      data-item-url="http://localhost:1313/products/the-one-product/">
-      Add to cart
-  </button>
-
-
-    
-    
-<script async src="https://cdn.snipcart.com/themes/v3.7.3/default/snipcart.js"></script>
-<div hidden id="snipcart" data-api-key="MGRiZmJkNmQtMDBmNS00ZjMwLWI1NmYtMWEwY2ViYzFkYzA2NjM4ODc2NDM5NTk5MjgxNjkz"></div>
 
   </body>
 </html>

@@ -6,14 +6,14 @@
     <description>Recent content on Final Try Store</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 May 2024 20:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 19 Aug 2025 10:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The One Product</title>
       <link>http://localhost:1313/products/the-one-product/</link>
-      <pubDate>Thu, 23 May 2024 20:00:00 +0800</pubDate>
+      <pubDate>Tue, 19 Aug 2025 10:00:00 +0800</pubDate>
       <guid>http://localhost:1313/products/the-one-product/</guid>
-      <description>&lt;p&gt;This is the product that will finally work.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This is the product that will finally work.&lt;/p&gt;&#xA;&lt;p&gt;&lt;button class=&#34;btn snipcart-add-item&#34;&#xA;data-item-id=&#34;the-one-product&#34;&#xA;data-item-price=&#34;19.99&#34;&#xA;data-item-url=&#34;{{ .Permalink }}&#34;&#xA;data-item-name=&#34;{{ .Title }}&#34;&gt;&#xA;Add to cart&#xA;&lt;/button&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
