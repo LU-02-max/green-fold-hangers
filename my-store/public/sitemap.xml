@@ -2,17 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:64519/</loc>
+    <loc>http://localhost:51225/</loc>
+    <lastmod>2025-08-19T12:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:51225/posts/</loc>
+    <lastmod>2025-08-19T12:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:51225/posts/my-first-article/</loc>
+    <lastmod>2025-08-19T12:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:51225/products/</loc>
     <lastmod>2025-08-19T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:64519/products/</loc>
+    <loc>http://localhost:51225/products/the-one-product/</loc>
     <lastmod>2025-08-19T10:00:00+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:64519/products/the-one-product/</loc>
-    <lastmod>2025-08-19T10:00:00+08:00</lastmod>
+    <loc>http://localhost:51225/categories/</loc>
   </url><url>
-    <loc>http://localhost:64519/categories/</loc>
-  </url><url>
-    <loc>http://localhost:64519/tags/</loc>
+    <loc>http://localhost:51225/tags/</loc>
   </url>
 </urlset>

@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Final Try Store</title>
-    <link>http://localhost:64519/</link>
+    <link>http://localhost:51225/</link>
     <description>Recent content on Final Try Store</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Aug 2025 10:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:64519/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Aug 2025 12:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:51225/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的第一篇文章</title>
+      <link>http://localhost:51225/posts/my-first-article/</link>
+      <pubDate>Tue, 19 Aug 2025 12:00:00 +0800</pubDate>
+      <guid>http://localhost:51225/posts/my-first-article/</guid>
+      <description>&lt;h2 id=&#34;欢迎来到我的博客&#34;&gt;欢迎来到我的博客！&lt;/h2&gt;&#xA;&lt;p&gt;这是我使用 Hugo 搭建的独立站上发布的第一篇文章。&lt;/p&gt;&#xA;&lt;p&gt;在这里，我可以分享我的想法、记录我的学习过程，或者发布任何我想写的内容。&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;使用 Markdown 非常方便&lt;/li&gt;&#xA;&lt;li&gt;网站速度飞快&lt;/li&gt;&#xA;&lt;li&gt;完全由我掌控&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
     <item>
       <title>The One Product</title>
-      <link>http://localhost:64519/products/the-one-product/</link>
+      <link>http://localhost:51225/products/the-one-product/</link>
       <pubDate>Tue, 19 Aug 2025 10:00:00 +0800</pubDate>
-      <guid>http://localhost:64519/products/the-one-product/</guid>
+      <guid>http://localhost:51225/products/the-one-product/</guid>
       <description>&lt;p&gt;This is the product that will finally work.&lt;/p&gt;&#xA;&lt;p&gt;&lt;button class=&#34;btn snipcart-add-item&#34;&#xA;data-item-id=&#34;the-one-product&#34;&#xA;data-item-price=&#34;19.99&#34;&#xA;data-item-url=&#34;{{ .Permalink }}&#34;&#xA;data-item-name=&#34;{{ .Title }}&#34;&gt;&#xA;Add to cart&#xA;&lt;/button&gt;&lt;/p&gt;</description>
     </item>
   </channel>

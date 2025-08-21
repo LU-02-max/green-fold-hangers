@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Products on Final Try Store</title>
-    <link>http://localhost:64519/products/</link>
+    <link>http://localhost:51225/products/</link>
     <description>Recent content in Products on Final Try Store</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 Aug 2025 10:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:64519/products/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:51225/products/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The One Product</title>
-      <link>http://localhost:64519/products/the-one-product/</link>
+      <link>http://localhost:51225/products/the-one-product/</link>
       <pubDate>Tue, 19 Aug 2025 10:00:00 +0800</pubDate>
-      <guid>http://localhost:64519/products/the-one-product/</guid>
+      <guid>http://localhost:51225/products/the-one-product/</guid>
       <description>&lt;p&gt;This is the product that will finally work.&lt;/p&gt;&#xA;&lt;p&gt;&lt;button class=&#34;btn snipcart-add-item&#34;&#xA;data-item-id=&#34;the-one-product&#34;&#xA;data-item-price=&#34;19.99&#34;&#xA;data-item-url=&#34;{{ .Permalink }}&#34;&#xA;data-item-name=&#34;{{ .Title }}&#34;&gt;&#xA;Add to cart&#xA;&lt;/button&gt;&lt;/p&gt;</description>
     </item>
   </channel>
