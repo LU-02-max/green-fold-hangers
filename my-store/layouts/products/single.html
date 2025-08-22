@@ -1,10 +1,57 @@
 {{ define "main" }}
-  <div class="container">
-    <article>
-      <h1>{{ .Title }}</h1>
-      <div>
-        {{ .Content }}
-      </div>
-    </article>
-  </div>
+<article class="pa3 pa4-ns nested-copy-line-height">
+  <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
+    <!-- 这里是页面标题 -->
+    <h1 class="f2 f1-l fw2 black-90 mb3 lh-title">{{ .Title }}</h1>
+  </section>
+
+  <section class="flex-l items-start-l">
+    <!-- 左侧：产品图片展示 -->
+    <div class="w-100 w-50-l pa3">
+        <div class="main-image mb3">
+            <!-- 默认显示第一张图片 -->
+            <img src="{{ index .Params.images 0 }}" alt="{{ .Title }}" id="mainProductImage">
+        </div>
+        <div class="thumbnail-images flex">
+            <!-- 循环显示所有缩略图 -->
+            {{ range .Params.images }}
+            <div class="w-25 pa1">
+              <img src="{{ . }}" alt="Thumbnail" class="product-thumbnail pointer o-60 glow">
+            </div>
+            {{ end }}
+        </div>
+    </div>
+
+    <!-- 右侧：产品信息和购买按钮 -->
+    <div class="w-100 w-50-l pa3">
+        <p><strong>型号:</strong> {{ .Params.sku }}</p>
+        <p><strong>材质:</strong> {{ .Params.material }}</p>
+        <p>🔥 所有材料可回收纸浆。</p>
+        
+        <div class="f3 b mv3">${{ .Params.price }}</div>
+
+        <!-- Snipcart 添加到购物车按钮 -->
+        <button 
+          class="snipcart-add-item f6 link dim br2 ba ph3 pv2 mb2 dib white bg-dark-green"
+          data-item-id="{{ .Params.sku }}"
+          data-item-price="{{ .Params.price }}"
+          data-item-url="{{ .Permalink }}"
+          data-item-name="{{ .Title }}"
+          data-item-image="{{ index .Params.images 0 }}">
+          添加到购物车
+        </button>
+
+        <div class="product-actions mv3">
+            <a href="/products" class="f6 link dim br2 ba ph3 pv2 mb2 dib mid-gray">更多产品</a>
+        </div>
+    </div>
+  </section>
+
+  <!-- 下方：产品描述 -->
+  <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
+      <h2 class="f3 b">描述</h2>
+      {{ .Content }}
+  </section>
+
+</article>
 {{ end }}
